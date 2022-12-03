@@ -58,8 +58,7 @@ function API() {
     }
 
     const sendNotification = async() => {
-        // const PK = process.env.PRIVATE_KEY; // channel private key
-        const PK = "6d8ba3ffedde1df8c24629d66bf7a48b8f1ba91f6205e5a0b3fbbeb6271d6d8f"; // channel private key
+        const PK = process.env.PRIVATE_KEY; // channel private key
         const Pkey = `0x${PK}`;
         const signer = new ethers.Wallet(Pkey);
   
